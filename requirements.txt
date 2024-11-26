@@ -1,0 +1,10 @@
+faiss-cpu
+fuzzywuzzy
+groq
+langchain
+numpy
+pdfplumber
+requests
+sentence-transformers
+streamlit
+python-Levenshtein
