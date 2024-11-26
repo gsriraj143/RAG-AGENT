@@ -121,11 +121,6 @@ if st.session_state.faiss_index:
                     # Decode and validate base64 audio
                     try:
                         audio_data = base64.b64decode(audio_base64, validate=True)
-                    except Exception as decode_error:
-                        st.warning("The audio data from the API was invalid. Regenerating with a default fallback...")
-                        fallback_text = "Sorry, the original response couldn't be converted into audio. Please try again later."
-                        audio_base64 = text_to_speech(fallback_text, api_key="2d7fc1dd-d1d3-46cd-b69b-1b8483f356f7")
-                        audio_data = base64.b64decode(audio_base64, validate=True)
 
 
                     # Decode and stream audio
