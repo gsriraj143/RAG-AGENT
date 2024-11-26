@@ -104,7 +104,7 @@ def text_to_speech(text: str, api_key: str, target_language="en-IN", speaker="me
         "pitch": 0,  # Adjust as needed
         "pace": 1.0,  # Adjust as needed
         "loudness": 1.0,  # Adjust as needed
-        "speech_sample_rate": 50000,  # You can adjust this based on your requirements
+        "speech_sample_rate": 8000,  # You can adjust this based on your requirements
         "enable_preprocessing": True,
         "model": "bulbul:v1"
     }
