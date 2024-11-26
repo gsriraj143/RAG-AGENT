@@ -96,10 +96,6 @@ import base64
 def text_to_speech(text: str, api_key: str, target_language="en-IN", speaker="meera"):
     """Convert text to speech using Sarvam's TTS API."""
     url = "https://api.sarvam.ai/text-to-speech"
-    missing_padding = len(text) % 4
-    if missing_padding:
-        text += '=' * (4 - missing_padding)
-    text = base64.b64decode(text)
     
     payload = {
         "inputs": [text],
